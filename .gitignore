@@ -1,0 +1,11 @@
+# Saídas geradas pelos scripts (mantém apenas o .gitkeep)
+output/*.json
+output/*.md
+!output/.gitkeep
+
+# Variáveis de ambiente reais (use .env.example como base)
+.env
+
+# Volumes/dados locais, caso alguém use bind mounts em vez de named volumes
+ollama_models/
+open_webui_data/
