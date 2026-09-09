@@ -43,7 +43,7 @@ Todos copiados de `../img/`, que não é versionado (ver `.gitignore` da raiz) �
 | `sem-rag.png`           | `10.png`            | saída de `01_ask_without_rag.py`                |
 | `com-rag.png`           | `12.png`            | saída de `02_ask_with_rag.py`                   |
 
-`dockerday-badge.png` é diferente: recortado do card promocional oficial do evento (`../logo-dockerday.png` na raiz do repo, não versionado) — só a baleia dentro do badge branco, sem o fundo navy do card nem o texto "Docker Day", pra ficar pequeno o suficiente pro rodapé e o slide de título. Se o card oficial mudar, repita o recorte a partir do arquivo original.
+`docker-whale.png` é diferente: logo oficial da baleia do Docker (PNG com fundo transparente), usado no lockup "Docker Day Piracicaba" do slide de título e no rodapé de todos os slides.
 
 ## Se o texto do deck mudar de novo
 

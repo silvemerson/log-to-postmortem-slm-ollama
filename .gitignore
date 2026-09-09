@@ -19,8 +19,10 @@ img/
 slides/*.pdf
 slides/*.html
 
-# Card promocional original do evento (fonte do badge recortado em slides/assets/)
+# Assets soltos na raiz usados como fonte pros slides (as cópias tratadas
+# ficam versionadas em slides/assets/)
 /logo-dockerday.png
+/Docker.png
 
 # Variáveis de ambiente reais (use .env.example como base)
 .env

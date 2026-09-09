@@ -7,7 +7,7 @@ class:
 paginate: true
 backgroundColor: #0B1426
 lang: pt-BR
-footer: '![height:34px](assets/dockerday-badge.png) Docker Day · Região Metropolitana de Piracicaba'
+footer: '![height:26px](assets/docker-whale.png) Docker Day Piracicaba'
 style: |
   /* Mesmo tema/paleta do k8s-mentor (verde/teal 4Linux). */
   @import 'gaia';
@@ -129,20 +129,20 @@ style: |
 <!-- _footer: "" -->
 <style scoped>
 section { display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center; }
-h1 { font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00E6CC 0%, #4ECDC4 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:0.6rem; line-height:1.25; }
+h1 { font-size: 2rem; font-weight: 800; color: #00E6CC; margin-bottom:0.6rem; line-height:1.25; text-shadow:none; }
 h2 { font-size: 1.6rem; color:#F8FAFC; font-weight:400; opacity:0.9; }
-h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin-top:2rem; }
+h2::before { content:none; }
+h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin-top:1.4rem; }
 </style>
 
-![height:110px](assets/dockerday-badge.png)
+<div style="display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:2rem;">
+  <img src="assets/docker-whale.png" height="64">
+  <span style="font-size:1.5rem; font-weight:700; color:#F8FAFC; letter-spacing:0.02em;">Docker Day Piracicaba</span>
+</div>
 
 # Do log ao postmortem.
 ## IA local com Docker, Ollama e SLM
 ### Emerson Silva
-
-<div style="margin-top:1rem; font-size:0.9rem; color:#8B9DC3; letter-spacing:0.05em; text-transform:uppercase;">
-  Docker Day · Região Metropolitana de Piracicaba
-</div>
 
 ---
 <!-- _paginate: false -->
