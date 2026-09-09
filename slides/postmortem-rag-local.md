@@ -9,7 +9,7 @@ backgroundColor: #0B1426
 lang: pt-BR
 footer: '![height:26px](4linux-logo/logo-4linux.png)'
 style: |
-  /* Mesmo tema/paleta do k8s-mentor (verde/teal 4Linux). */
+  /* (verde/teal 4Linux). */
   @import 'gaia';
 
   :root {
@@ -129,26 +129,26 @@ style: |
 <!-- _footer: "" -->
 <style scoped>
 section { display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center; }
-h1 { font-size: 2rem; font-weight: 800; color: #00E6CC; margin-bottom:0.6rem; line-height:1.25; text-shadow:none; }
-h2 { font-size: 1.6rem; color:#F8FAFC; font-weight:400; opacity:0.9; }
+h1 { font-size: 2rem; font-weight: 800; color: #00E6CC; margin:0 0 0.5rem 0; line-height:1.25; text-shadow:none; }
+h2 { font-size: 1.6rem; color:#F8FAFC; font-weight:400; opacity:0.9; margin:0 0 1.1rem 0; }
 h2::before { content:none; }
-h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin-top:1.4rem; }
+h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin:0.9rem 0 0 0; }
 </style>
 
-<p style="text-align:center; margin:0;"><img src="assets/docker-whale.png" height="120"></p>
-<p style="text-align:center; margin:8px 0 1.8rem 0; font-size:1.3rem; font-weight:700; color:#F8FAFC; letter-spacing:0.02em;">Docker Day Piracicaba</p>
+<p style="text-align:center; margin:0;"><img src="assets/docker-whale.png" height="110"></p>
+<p style="text-align:center; margin:8px 0 1.3rem 0; font-size:1.3rem; font-weight:700; color:#F8FAFC; letter-spacing:0.02em;">Docker Day Piracicaba</p>
 
 # Do log ao postmortem.
 ## IA local com Docker, Ollama e SLM
 ### Emerson Silva
 
-<img src="4linux-logo/logo-4linux.png" height="34" style="margin-top:1.2rem;">
+<img src="4linux-logo/logo-4linux.png" height="34" style="margin-top:0.8rem;">
 
 
 ---
 <!-- _paginate: false -->
 
-![bg right:40%](eu-rsrs/perfil2.png)
+![bg right:38% 62%](eu-rsrs/perfil2.png)
 
 # Emerson Silva
 
