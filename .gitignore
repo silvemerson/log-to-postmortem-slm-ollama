@@ -8,6 +8,13 @@ rag-java-especialista/output/*.json
 rag-java-especialista/output/*.md
 !rag-java-especialista/output/.gitkeep
 
+# Cache de bytecode do Python
+__pycache__/
+*.pyc
+
+# Prints usados nos slides da palestra (ficam só localmente)
+img/
+
 # Variáveis de ambiente reais (use .env.example como base)
 .env
 
