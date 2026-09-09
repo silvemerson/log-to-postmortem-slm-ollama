@@ -19,6 +19,9 @@ img/
 slides/*.pdf
 slides/*.html
 
+# Card promocional original do evento (fonte do badge recortado em slides/assets/)
+/logo-dockerday.png
+
 # Variáveis de ambiente reais (use .env.example como base)
 .env
 

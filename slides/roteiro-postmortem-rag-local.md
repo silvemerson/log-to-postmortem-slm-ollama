@@ -1,6 +1,7 @@
-# Roteiro de Apresentação — O log não sai da rede (log-to-postmortem-slm-ollama)
+# Roteiro de Apresentação — Do log ao postmortem (log-to-postmortem-slm-ollama)
 
-**Palestrante:** Emerson Silva · 4Linux
+**Evento:** Docker Day · Região Metropolitana de Piracicaba
+**Palestrante:** Emerson Silva
 **Tempo total estimado:** 22–25 min + perguntas (alvo: 25 min)
 **Formato:** prints reais (não é demo ao vivo) — os 6 prints usados vêm de `assets/`, gerados a partir do repositório
 
@@ -12,7 +13,7 @@
 
 > **Tom:** direto, sem "bom dia, meu nome é...". O título é a tese inteira da talk.
 
-"O log não sai da rede. Hoje eu vou te mostrar dois momentos: primeiro, transformar um log de erro num rascunho de postmortem. Depois, transformar o mesmo SLM genérico num especialista — os dois rodando 100% na sua máquina, sem mandar nada pra nuvem."
+"Do log ao postmortem: IA local com Docker, Ollama e SLM. Hoje eu vou te mostrar dois momentos: primeiro, transformar um log de erro num rascunho de postmortem. Depois, transformar o mesmo SLM genérico num especialista — os dois rodando 100% na sua máquina, sem mandar nada pra nuvem."
 
 ---
 

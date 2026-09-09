@@ -7,7 +7,7 @@ class:
 paginate: true
 backgroundColor: #0B1426
 lang: pt-BR
-footer: '![height:40px](4linux-logo/logo-4linux.png)'
+footer: '![height:34px](assets/dockerday-badge.png) Docker Day · Região Metropolitana de Piracicaba'
 style: |
   /* Mesmo tema/paleta do k8s-mentor (verde/teal 4Linux). */
   @import 'gaia';
@@ -134,12 +134,14 @@ h2 { font-size: 1.6rem; color:#F8FAFC; font-weight:400; opacity:0.9; }
 h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin-top:2rem; }
 </style>
 
-# O log não sai da rede.
-## De erro a postmortem — e de SLM genérico a especialista — 100% local
+![height:110px](assets/dockerday-badge.png)
+
+# Do log ao postmortem.
+## IA local com Docker, Ollama e SLM
 ### Emerson Silva
 
-<div style="display:flex; justify-content:center; align-items:flex-end; gap:40px; margin-top:1.8rem;">
-  <img src="4linux-logo/logo-4linux.png" height="42">
+<div style="margin-top:1rem; font-size:0.9rem; color:#8B9DC3; letter-spacing:0.05em; text-transform:uppercase;">
+  Docker Day · Região Metropolitana de Piracicaba
 </div>
 
 ---
