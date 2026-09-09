@@ -7,7 +7,7 @@ class:
 paginate: true
 backgroundColor: #0B1426
 lang: pt-BR
-footer: '![height:26px](assets/docker-whale.png) Docker Day Piracicaba'
+footer: '![height:26px](4linux-logo/logo-4linux.png)'
 style: |
   /* Mesmo tema/paleta do k8s-mentor (verde/teal 4Linux). */
   @import 'gaia';
@@ -135,14 +135,15 @@ h2::before { content:none; }
 h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin-top:1.4rem; }
 </style>
 
-<div style="display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:2rem;">
-  <img src="assets/docker-whale.png" height="64">
-  <span style="font-size:1.5rem; font-weight:700; color:#F8FAFC; letter-spacing:0.02em;">Docker Day Piracicaba</span>
-</div>
+<p style="text-align:center; margin:0;"><img src="assets/docker-whale.png" height="120"></p>
+<p style="text-align:center; margin:8px 0 1.8rem 0; font-size:1.3rem; font-weight:700; color:#F8FAFC; letter-spacing:0.02em;">Docker Day Piracicaba</p>
 
 # Do log ao postmortem.
 ## IA local com Docker, Ollama e SLM
 ### Emerson Silva
+
+<img src="4linux-logo/logo-4linux.png" height="34" style="margin-top:1.2rem;">
+
 
 ---
 <!-- _paginate: false -->
@@ -155,6 +156,35 @@ h3 { font-size: 1.2rem; color: #4ECDC4; font-weight:500; margin-top:1.4rem; }
 - Autor de *Kubernetes para Iniciantes* e *Mentes Automatizadas: IA em Ambientes Kubernetes e DevOps*
 - Community Lead de Kubernetes na **DougBrazil**
 - Organizador do Chapter da **CNCF em Campinas**
+
+---
+<!-- _paginate: false -->
+<!-- _footer: "" -->
+<style scoped>
+section { padding: 50px 60px 70px 60px; text-align: center; }
+h2 { font-size: 1.4em; color: #8B9DC3; font-weight: 400; margin-bottom: 0.3em; letter-spacing: 0.05em; text-transform: uppercase; }
+h2::before { display: none; }
+p { font-size: 0.85em; color: #c8d4e8; line-height: 1.6; max-width: 72%; margin: 0 auto 1.6em auto; text-align: center; }
+.timeline { display: flex; align-items: flex-start; gap: 0; width: 100%; margin-top: 0.5em; position: relative; }
+.timeline::before { content: ""; position: absolute; top: 22px; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #00E6CC, #4ECDC4, #f15a29); }
+.tl-item { flex: 1; text-align: center; position: relative; padding-top: 40px; }
+.tl-item::before { content: ""; position: absolute; top: 16px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background: #00E6CC; border: 2px solid #0B1426; z-index: 1; }
+.tl-year { font-size: 0.9em; font-weight: 700; color: #00E6CC; display: block; }
+.tl-label { font-size: 0.6em; color: #8B9DC3; display: block; margin-top: 2px; line-height: 1.2; }
+</style>
+
+![height:52px](4linux-logo/logo-4linux.png)
+
+Fundada em 2001, a 4Linux participou das principais transformações da área de tecnologia. Começamos com Linux e software livre, navegamos por Cloud, DevOps e Containers — e hoje atuamos com agentes de IA, sempre com base em **inovação aberta**.
+
+<div class="timeline">
+  <div class="tl-item"><span class="tl-year">2001</span><span class="tl-label">Linux &<br>Software Livre</span></div>
+  <div class="tl-item"><span class="tl-year">2008</span><span class="tl-label">DevOps</span></div>
+  <div class="tl-item"><span class="tl-year">2016</span><span class="tl-label">Containers &<br>Kubernetes</span></div>
+  <div class="tl-item"><span class="tl-year">2019</span><span class="tl-label">Machine<br>Learning</span></div>
+  <div class="tl-item"><span class="tl-year">2020</span><span class="tl-year" style="color:#4ECDC4">Cloud</span></div>
+  <div class="tl-item"><span class="tl-year">2024+</span><span class="tl-label">IA com<br>Open Source</span></div>
+</div>
 
 ---
 
@@ -376,12 +406,18 @@ Num dos testes, o modelo respondeu certo sobre `PriorityBlockingQueue` e `OrderS
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 <style scoped>
-section { text-align: center; }
+section { display:flex; flex-direction:column; justify-content:center; }
 </style>
+
+![bg right:42% 75%](assets/qrcode-contato.png)
 
 # Obrigado!
 
-github.com/SEU_USUARIO/log-to-postmortem-slm-ollama
-
 **Emerson Silva** · 4Linux
-emerson-silva.blog.br · linkedin.com/in/silvemerson
+
+📝 emerson-silva.blog.br
+💼 linkedin.com/in/silvemerson
+
+`github.com/silvemerson/log-to-postmortem-slm-ollama`
+
+Escaneie o QR code pra me seguir →

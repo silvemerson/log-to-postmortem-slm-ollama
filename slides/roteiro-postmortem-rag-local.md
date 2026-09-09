@@ -2,10 +2,10 @@
 
 **Evento:** Docker Day · Região Metropolitana de Piracicaba
 **Palestrante:** Emerson Silva
-**Tempo total estimado:** 22–25 min + perguntas (alvo: 25 min)
+**Tempo total estimado:** 22–26 min + perguntas (alvo: 25 min)
 **Formato:** prints reais (não é demo ao vivo) — os 6 prints usados vêm de `assets/`, gerados a partir do repositório
 
-> **Numeração:** 1 entrada = 1 slide real do `postmortem-rag-local.md` (20 no total). Se o deck mudar, reconfira contando os blocos — não conte `---` do frontmatter.
+> **Numeração:** 1 entrada = 1 slide real do `postmortem-rag-local.md` (21 no total). Se o deck mudar, reconfira contando os blocos — não conte `---` do frontmatter.
 
 ---
 
@@ -23,13 +23,21 @@
 
 ---
 
-## Slide 3 — Agenda (30 seg)
+## Slide 3 — A 4Linux (30 seg)
+
+> **Tom:** rápido, institucional, sem se alongar — é passagem, não o foco da talk.
+
+"Uma palavra rápida sobre quem eu represento aqui: a 4Linux existe desde 2001, passou por Linux e software livre, DevOps, containers e Kubernetes, cloud — e hoje trabalha com agentes de IA. O projeto de hoje nasce exatamente desse último capítulo."
+
+---
+
+## Slide 4 — Agenda (30 seg)
 
 "Seis partes rápidas: o problema que motivou isso, por que SLM local em vez de LLM de nuvem, a primeira demo — log virando postmortem —, depois uma pergunta que separa fine-tuning de RAG, a segunda demo — o mesmo SLM virando especialista —, e fecho com o que aprendi testando de verdade."
 
 ---
 
-## Slide 4 — 3h da manhã, o banco caiu (2 min)
+## Slide 5 — 3h da manhã, o banco caiu (2 min)
 
 > **Tom:** cenário concreto, não abstrato — todo SRE já viveu isso.
 
@@ -39,7 +47,7 @@
 
 ---
 
-## Slide 5 — SLM local, via Ollama (2 min)
+## Slide 6 — SLM local, via Ollama (2 min)
 
 "A resposta é rodar um SLM — Small Language Model — local, via Ollama. Não é um LLM menor por acidente, é feito pra ser pequeno: poucos bilhões de parâmetros, roda até em CPU, cabe no seu laptop."
 
@@ -47,7 +55,7 @@
 
 ---
 
-## Slide 6 — Docker + Ollama, dois containers (1 min)
+## Slide 7 — Docker + Ollama, dois containers (1 min)
 
 "A stack é simples: dois containers, Ollama expondo a API na porta 11434, e Open WebUI se quiser conversar com o modelo pelo navegador. `docker compose up -d` sobe os dois, o modelo é baixado uma vez com `ollama pull` e fica em volume persistente."
 
@@ -55,13 +63,13 @@
 
 ---
 
-## Slide 7 — Demo 1: de log a postmortem (1 min)
+## Slide 8 — Demo 1: de log a postmortem (1 min)
 
 "Primeira demo: um log real de timeout de conexão com PostgreSQL passa por dois scripts. O primeiro analisa e estrutura o problema. O segundo pega essa análise e gera um rascunho de postmortem em Markdown. Os dois passando pelo mesmo SLM local."
 
 ---
 
-## Slide 8 — O log que vamos analisar (1.5 min)
+## Slide 9 — O log que vamos analisar (1.5 min)
 
 > **Print real:** `samples/error.log`.
 
@@ -69,7 +77,7 @@
 
 ---
 
-## Slide 9 — Passo 1: análise estruturada (2 min)
+## Slide 10 — Passo 1: análise estruturada (2 min)
 
 > **Print real:** saída de `python3 scripts/01_analyze_log.py`.
 
@@ -77,7 +85,7 @@
 
 ---
 
-## Slide 10 — Passo 2: o rascunho de postmortem (2 min)
+## Slide 11 — Passo 2: o rascunho de postmortem (2 min)
 
 > **Print real:** `postmortem.md` renderizado.
 
@@ -87,13 +95,13 @@
 
 ---
 
-## Slide 11 — E se eu quiser um especialista? (1 min)
+## Slide 12 — E se eu quiser um especialista? (1 min)
 
 "Isso já ajuda pra log genérico. Mas e se eu quiser que o modelo conheça as convenções do MEU time — nomes de classe internos, regras de nomenclatura, coisas que não estão em nenhum lugar público? A resposta óbvia parece ser fine-tuning. Não é a primeira escolha."
 
 ---
 
-## Slide 12 — Fine-tuning vs. RAG (1.5 min)
+## Slide 13 — Fine-tuning vs. RAG (1.5 min)
 
 "Fine-tuning ensina estilo e formato muito bem. Mas não é confiável pra injetar conhecimento novo — exige dataset curado, pipeline de treino, avaliação. É trabalho de ML de verdade."
 
@@ -101,13 +109,13 @@
 
 ---
 
-## Slide 13 — Demo 2: SLM genérico vs. SLM + RAG (1 min)
+## Slide 14 — Demo 2: SLM genérico vs. SLM + RAG (1 min)
 
 "Segunda demo. Montei uma base de conhecimento local: documentação geral de algoritmos em Java, mais um documento de convenções de uma squad fictícia — coisas que nenhum modelo pré-treinado teria como saber. Um script indexa essa base com embeddings. Outros dois fazem a mesma pergunta, um sem contexto, outro com."
 
 ---
 
-## Slide 14 — Construindo o índice vetorial (1 min)
+## Slide 15 — Construindo o índice vetorial (1 min)
 
 > **Print real:** `00_build_index.py` — 5 documentos, 22 chunks.
 
@@ -115,7 +123,7 @@
 
 ---
 
-## Slide 15 — Sem RAG (1.5 min)
+## Slide 16 — Sem RAG (1.5 min)
 
 > **Print real:** `01_ask_without_rag.py`.
 
@@ -123,7 +131,7 @@
 
 ---
 
-## Slide 16 — Com RAG (2 min)
+## Slide 17 — Com RAG (2 min)
 
 > **Print real:** `02_ask_with_rag.py` — chunks recuperados + resposta.
 
@@ -131,7 +139,7 @@
 
 ---
 
-## Slide 17 — O bug que quase estragou a demo (1.5 min)
+## Slide 18 — O bug que quase estragou a demo (1.5 min)
 
 > **Tom:** credibilidade técnica — mostra que isso foi testado de verdade, não só idealizado.
 
@@ -141,7 +149,7 @@
 
 ---
 
-## Slide 18 — RAG reduz alucinação. Não elimina. (1.5 min)
+## Slide 19 — RAG reduz alucinação. Não elimina. (1.5 min)
 
 "E um achado favorito: numa das rodadas, o modelo respondeu certíssimo sobre PriorityBlockingQueue e a política de ordenação — e começou a frase dizendo que o time Orders era 'da Alibaba Cloud'. Detalhe inventado, não existe em lugar nenhum do contexto."
 
@@ -149,7 +157,7 @@
 
 ---
 
-## Slide 19 — Quando usar / quando não usar (1.5 min)
+## Slide 20 — Quando usar / quando não usar (1.5 min)
 
 "Pra fechar o raciocínio: funciona bem pra tarefas estruturadas com contexto contido, ambientes com restrição de privacidade, e como primeira passada que economiza tempo do plantão."
 
@@ -157,9 +165,9 @@
 
 ---
 
-## Slide 20 — Obrigado! (30 seg)
+## Slide 21 — Obrigado! (30 seg)
 
-_[link do repositório na tela]_
+_[QR code de contato + link do repositório na tela]_
 
 "Obrigado! O repositório está aberto, com os dois labs prontos pra rodar. Fico por aqui pras perguntas."
 
