@@ -15,6 +15,10 @@ __pycache__/
 # Prints usados nos slides da palestra (ficam só localmente)
 img/
 
+# Exports do deck Marp (binários regeneráveis — ver slides/README.md)
+slides/*.pdf
+slides/*.html
+
 # Variáveis de ambiente reais (use .env.example como base)
 .env
 
