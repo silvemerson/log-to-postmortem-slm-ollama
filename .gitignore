@@ -3,6 +3,11 @@ output/*.json
 output/*.md
 !output/.gitkeep
 
+# Idem para o índice vetorial e respostas do lab de RAG
+rag-java-especialista/output/*.json
+rag-java-especialista/output/*.md
+!rag-java-especialista/output/.gitkeep
+
 # Variáveis de ambiente reais (use .env.example como base)
 .env
 

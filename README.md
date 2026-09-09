@@ -68,6 +68,10 @@ Resultados:
 
 Você também pode abrir o [Open WebUI](http://localhost:3000) e conversar com o modelo direto no navegador.
 
+## Demo 2: SLM especialista via RAG
+
+O repositório inclui uma segunda demo, em [`rag-java-especialista/`](rag-java-especialista/), mostrando como transformar o mesmo SLM local em um "especialista" usando RAG (Retrieval-Augmented Generation) em vez de fine-tuning: a mesma pergunta é feita sem contexto (o modelo responde de forma genérica) e depois com contexto recuperado de uma base de conhecimento local (o modelo responde citando convenções específicas que ele não poderia saber de antemão). Essa demo usa `qwen2.5:3b` em vez de `phi3` (bom desempenho em tarefas de código, mesmo porte). Veja o [README dessa pasta](rag-java-especialista/README.md) para o passo a passo.
+
 ## LLM vs. SLM — e por que este lab usa Phi-3
 
 **LLMs** (Large Language Models — GPT, Claude, Gemini…) têm dezenas ou centenas de bilhões de parâmetros: são mais capazes em raciocínio aberto, mas exigem infraestrutura pesada e, na prática, rodam em APIs de terceiros — ou seja, seus logs saem da sua rede.
@@ -105,13 +109,15 @@ Regra prática: o SLM **acelera** o trabalho do engenheiro; ele não o substitui
 ├── scripts/
 │   ├── 01_analyze_log.py         # log -> análise estruturada (JSON)
 │   └── 02_generate_postmortem.py # análise -> rascunho de postmortem (Markdown)
-└── output/                       # arquivos gerados (ignorados pelo git)
+├── output/                       # arquivos gerados (ignorados pelo git)
+└── rag-java-especialista/        # demo 2: SLM genérico vs. SLM + RAG (ver README próprio)
 ```
 
 ## Créditos
 
 **Emerson Silva** — DevOps/SRE Engineer
 
+- Autor dos livros *Kubernetes para Iniciantes* e *Mentes Automatizadas: IA em Ambientes Kubernetes e DevOps*
 - Community Lead de Kubernetes na DougBrazil
 - Organizador do CNCF Campinas
 
