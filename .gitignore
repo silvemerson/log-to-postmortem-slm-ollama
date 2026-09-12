@@ -12,15 +12,9 @@ rag-java-especialista/output/*.md
 __pycache__/
 *.pyc
 
-# Prints usados nos slides da palestra (ficam só localmente)
+# Prints que serviram de referência pros slides da palestra (o material da
+# palestra em si vive em ~/palestras/docker-day-piracicaba-2026/)
 img/
-
-# Exports do deck Marp (binários regeneráveis — ver slides/README.md)
-slides/*.pdf
-slides/*.html
-
-# Assets soltos na raiz usados como fonte pros slides (as cópias tratadas
-# ficam versionadas em slides/assets/)
 /logo-dockerday.png
 /Docker.png
 

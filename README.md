@@ -9,7 +9,7 @@ samples/error.log ──▶ 01_analyze_log.py ──▶ output/analysis.json ─
                           (SLM via Ollama)                                (SLM via Ollama)
 ```
 
-> Material de apoio de palestra técnica. Os prints da demo foram gerados com este repositório — sinta-se à vontade para reproduzir tudo na sua máquina.
+> Material de apoio de palestra técnica. Os prints da demo foram gerados com este repositório — sinta-se à vontade para reproduzir tudo na sua máquina. Os slides da palestra ("Do log ao postmortem: IA local com Docker, Ollama e SLM", Docker Day · Região Metropolitana de Piracicaba) ficam em repositório separado: [`docker-day-piracicaba-2026`](https://github.com/silvemerson/docker-day-piracicaba-2026).
 
 ## Pré-requisitos
 
